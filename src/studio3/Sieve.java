@@ -12,7 +12,7 @@ public class Sieve {
 		boolean prime[] = new boolean [n];
 
 		for (int i = 1; i < n; i++) {
-			for (int j = 2; j < 8; j++) {
+			for (int j = 2; j < n; j++) {
 				if ((i%j != 0)&&(i != j)){
 					prime[j] = true;
 				}
